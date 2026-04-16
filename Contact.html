@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Course Organizer –  Contact me</title>
+  <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎓</div>
+        Course<span>organizer</span>
+      </a>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <nav id = "main-nav">
+            <a href = "index.html">Home</a>
+            <a href = "courses.html">My courses</a>
+            <a href = "Add.html" class="nav-cta" >➕Add courses</a>
+            <a href = "Contact.html">contact me</a>
+        </nav>
+    </div>
+  </header>
+  <main>
+
+    <div class="page-hero">
+      <div class="badge">Contact me</div>
+      <h1>I am here <em>to help you</em></h1>
+      <p>Contact us anytime and we will get back to you as soon as possible.</p>
+    </div>
+
+    <section>
+      <div class="contact-layout">
+
+       
+        <div>
+          <div class="contact-info-card">
+            <h3>Contact information</h3>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div class="contact-item-text">
+                <strong> e-mail</strong>
+                <span>mamhms24127@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div class="contact-item-text">
+                <strong> phone number</strong>
+                <span>01156207569</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-text">
+                <strong>my address</strong>
+                <span>Ciro , Dar Elsalam</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div class="contact-item-text">
+                <strong>working hours</strong>
+                <span>every day</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="form-card">
+          <div class="form-card-header">
+            <h2>Send your message</h2>
+            <p>We will respond to you within 24 hours</p>
+          </div>
+
+          <div class="form-body">
+            <div class="form-grid">
+
+              <div class="form-group">
+                <label for="fullName"><span class="required">*</span> full name </label>
+                <input type="text" id="fullName" name="fullName" placeholder="full name " required />
+              </div>
+
+              <div class="form-group">
+                <label for="email"><span class="required">*</span> e-mail </label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">your phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+20 xxx xxx xxxx" />
+              </div>
+
+
+              <div class="form-group full-width">
+                <label for="message"><span class="required">*</span> Message text</label>
+                <textarea id="message" name="message" placeholder="Write your message here in detail..." style="min-height:150px;"></textarea>
+              </div>
+
+            </div>
+
+            <div class="success-msg" id="contactSuccess">
+              Your message has been sent successfully! We will contact you soon.
+            </div>
+          </div>
+
+        
+
+      </div>
+    </section>
+
+  </main>
+  <footer>
+  <p>© 2026 Personal Course Organizer</p>
+</footer>
+  
+    </body>
+</html>
