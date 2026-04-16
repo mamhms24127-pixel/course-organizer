@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+    <html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Course Organizer – my courses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">🎓</div>
+      Course<span>organizer</span>
+    </a>
+
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="courses.html">My courses</a>
+      <a href="Add.html" class="nav-cta">➕Add courses</a>
+      <a href="Contact.html">contact me</a>
+    </nav>
+
+    <div class="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+   <main>
+
+    <div class="page-hero">
+      <div class="badge">My courses</div>
+      <h1>All <em>my courses </em>in one place</h1>
+      <p></p>
+    </div>
+
+    
+     <section>
+      <div class="stats-row">
+        <div class="stat-box">
+          <span class="stat-number">5</span>
+          <div class="stat-label">Total courses </div>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">15</span>
+          <div class="stat-label">Credit hours</div>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">3</span>
+          <div class="stat-label">active</div>
+        </div>
+        <div class="stat-box">
+          <span class="stat-number">2</span>
+          <div class="stat-label">complete / Detained</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Table -->
+    <section>
+      <div class="table-wrapper">
+        <div class="table-header-bar">
+          <h2>Course table</h2>
+          <div class="search-box">
+            <span>🔍</span>
+            <input type="text" id="searchInput" placeholder="Search for a course..." oninput="filterTable()" />
+          </div>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table id="coursesTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>course name</th>
+                <th>doctor</th>
+                <th>credit hours </th>
+                <th>state</th>
+                <th>notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: var(--text-muted); font-weight:700;">01</td>
+                <td>
+                  <div class="course-name">
+                    <span class="course-dot"></span>
+                   IT
+                  </div>
+                </td>
+                <td>D.Mohamed</td>
+                <td><strong style="color:var(--gold)">3</strong> hours</td>
+                <td><span class="status-badge status-active">🟢 active</span></td>
+                <td style="color:var(--text-muted); font-size:0.85rem;">It includes projects</td>
+              </tr>
+              <tr>
+                <td style="color: var(--text-muted); font-weight:700;">02</td>
+                <td>
+                  <div class="course-name">
+                    <span class="course-dot" style="background:var(--gold)"></span>
+                   Math
+                  </div>
+                </td>
+                <td>D.Ahmed</td>
+                <td><strong style="color:var(--gold)">3</strong> hours</td>
+                <td><span class="status-badge status-done">finished</span></td>
+                <td style="color:var(--text-muted); font-size:0.85rem;">Completed successfully</td>
+              </tr>
+              <tr>
+                <td style="color: var(--text-muted); font-weight:700;">03</td>
+                <td>
+                  <div class="course-name">
+                    <span class="course-dot" style="background:#60a5fa"></span>
+                    PL
+                  </div>
+                </td>
+                <td>D.Mohamed</td>
+                <td><strong style="color:var(--gold)">3</strong> hours</td>
+                <td><span class="status-badge status-active">active</span></td>
+                <td style="color:var(--text-muted); font-size:0.85rem;"> Week 3</td>
+              </tr>
+              <tr>
+                <td style="color: var(--text-muted); font-weight:700;">04</td>
+                <td>
+                  <div class="course-name">
+                    <span class="course-dot" style="background:#a78bfa"></span>
+                   Stat
+                  </div>
+                </td>
+                <td>D.Hussein</td>
+                <td><strong style="color:var(--gold)">3</strong> hours</td>
+                <td><span class="status-badge status-paused">Detained</span></td>
+                <td style="color:var(--text-muted); font-size:0.85rem;">It will resume next month</td>
+              </tr>
+              <tr>
+                <td style="color: var(--text-muted); font-weight:700;">05</td>
+                <td>
+                  <div class="course-name">
+                    <span class="course-dot" style="background:#34d399"></span>
+                   DM
+                  </div>
+                </td>
+                <td>D.Salem</td>
+                <td><strong style="color:var(--gold)">3</strong> hours</td>
+                <td><span class="status-badge status-active">active</span></td>
+                <td style="color:var(--text-muted); font-size:0.85rem;">easy</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+       
+    </section>
+
+    <!-- CTA -->
+    <section style="text-align:center; padding: 1rem 0 2rem;">
+      <a href="Add.html" class="btn btn-primary" style="font-size:1rem;">➕Add course</a>
+    </section>
+
+  </main>
+  <footer>
+  <p>© 2026 Personal Course Organizer</p>
+</footer>
+</body>
+</html>
